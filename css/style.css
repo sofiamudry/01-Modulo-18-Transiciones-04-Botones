@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #0e83cd;
+    color: #fff;
+    font-family: 'Open Sans Condensed';
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+}
+
+.section-01 {
+    height: 100px;
+    flex-direction: row;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+    margin: 50px;
+    border: 2px solid #fff;
+    position: relative;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.boton-01 {
+    transform: background-color;
+}
+
+.boton-01:hover {
+    background-color: #fff;
+    color: #0e83cd;
+    transition-duration: .5s;
+}
+
+.back-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 200px;
+    margin: 50px;
+    position: absolute;
+    background-color: #fff;
+}
+
+.b-b-01 {
+    left: -130%;
+}
+
+.boton-02:hover .back-boton {
+    left: -27%;
+    transition-duration: .5s;
+    z-index: -1;
+}
+
+.boton-02:hover, .boton-03:hover, .boton-04:hover, .boton-05:hover, .boton-06:hover {
+    color: #0e83cd;
+    transition-duration: .3s;
+    z-index: 1;
+}
+
+.b-b-02 {
+    bottom: 100%;
+}
+
+.boton-03:hover .back-boton {
+    bottom: -110%;
+    transition-duration: .5s;
+    z-index: -1;
+}
+
+.b-b-03 {
+    width: 0;
+}
+
+.boton-04:hover .back-boton {
+    width: 90%;
+    transition-duration: .5s;
+    z-index: -1;
+}
+
+.b-b-04 {
+    width: 0;
+    transform: rotate(-45deg);
+}
+
+.boton-05:hover .back-boton {
+    height: 300px;
+    width: 150px;
+    transition-duration: .5s;
+    z-index: -1;
+}
+
+.b-b-05 {
+    height: 30px;
+    width: 0px;
+    transform: rotatey(90deg);
+}
+
+.boton-06:hover .back-boton {
+    height: 30px;
+    width: 200px;
+    transform: rotatey(180deg);
+    transition-duration: .5s;
+    z-index: -1;
+}
